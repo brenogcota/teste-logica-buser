@@ -5,7 +5,6 @@ function isAnagrama (p1, p2) {
   if(p1 == p2) return true;
   if(p1.length != p2.length) return false;
 
-
   Array.prototype.isAnagram = (function() {
     return this.reduce((acc, item) => {
                     if(acc[item]) {
@@ -21,7 +20,6 @@ function isAnagrama (p1, p2) {
   })
 
   const p1Result = p1.isAnagram()
-
   const p2Result = p2.isAnagram()
 
   for(item in p1Result) {
